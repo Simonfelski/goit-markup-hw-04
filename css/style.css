@@ -5,6 +5,7 @@
   --third-primary-color: #757575;
   --basic-white-color: #ffffff;
   --background-dark-transparent: #2f303a66;
+  --a text-decoration: none;
 }
 * {
   margin: 0;
@@ -33,13 +34,13 @@ body {
 }
 
 .logo-font:hover,
-menu:hover {
+.menu:hover {
   color: var(--primary-color);
   text-decoration: underline;
 }
 
 .logo-font,
-menu:focus {
+.menu:focus {
   color: var(--primary-color);
 }
 
@@ -89,6 +90,7 @@ menu:focus {
   line-height: 1rem;
   letter-spacing: 0.02em;
   font-family: 'Roboto', sans-serif;
+  fill:currentColor
 }
 .contact-links:hover {
   color: var(--primary-color);
@@ -225,6 +227,7 @@ menu:focus {
 .no-list {
   list-style: none;
   padding-top: 10px;
+  border-radius: 0px 0px 4px 4px;
 }
 .list-style {
   font-style: normal;
@@ -429,13 +432,13 @@ input[type='button']:hover {
   justify-content: center;
   align-items: center;
 }
-.pure-list {
+ .pure-list {
   list-style: none;
   display: flex;
   gap: 10px;
   justify-content: center;
   flex-direction: row;
-  /* padding-right: 32px;
+  padding-right: 32px;
   padding-left: 32px;
-  padding-bottom: 30px; */
-}
+  padding-bottom: 30px;
+} 
