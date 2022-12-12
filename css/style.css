@@ -5,11 +5,16 @@
   --third-primary-color: #757575;
   --basic-white-color: #ffffff;
   --background-dark-transparent: #2f303a66;
-  --a text-decoration: none;
+  --social-links-color: #afb1b8;
 }
+
 * {
   margin: 0;
   padding: 0;
+}
+
+a {
+  text-decoration: none;
 }
 
 body {
@@ -90,7 +95,7 @@ body {
   line-height: 1rem;
   letter-spacing: 0.02em;
   font-family: 'Roboto', sans-serif;
-  fill:currentColor
+  fill: currentColor;
 }
 .contact-links:hover {
   color: var(--primary-color);
@@ -230,7 +235,6 @@ body {
 
 .no-list {
   list-style: none;
-  padding-top: 10px;
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -291,11 +295,16 @@ body {
 .footer-logo:hover {
   text-decoration: underline;
   color: var(--primary-color);
-/* }
+  /* }
 .footer-info-wrapper {
   padding-top: 60px;
   padding-bottom: 60px; */
 }
+.contact-info-mail:hover {
+  text-decoration: underline;
+  color: var(--primary-color);
+}
+
 .address-info {
   padding-top: 20px;
   display: flex;
@@ -309,7 +318,16 @@ body {
   line-height: 24px;
   letter-spacing: 0.03em;
   color: #ffffff99;
-  text-decoration: none;
+}
+.contact-info-mail {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #ffffff99;
+  text-decoration: underline;
+  text-decoration-color: var(--third-primary-color);
 }
 .contact-div {
   display: flex;
@@ -446,7 +464,7 @@ input[type='button']:hover {
   justify-content: center;
   align-items: center;
 }
- .pure-list {
+.pure-list {
   list-style: none;
   display: flex;
   gap: 10px;
@@ -455,4 +473,35 @@ input[type='button']:hover {
   padding-right: 32px;
   padding-left: 32px;
   padding-bottom: 30px;
-} 
+}
+
+.social-icons {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 32px 30px 32px;
+}
+.social-icons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+.sm-circle {
+}
+
+.sm-icons {
+  fill: var(--social-links-color);
+}
+
+.sm-circle:hover > .sm-icons,
+.sm-circle:focus > .sm-icons {
+  fill: var(--basic-white-color);
+}
+
+.sm-circle:hover,
+.sm-circle:focus {
+  background-color: var(--third-primary-color);
+  outline: none;
+}
