@@ -505,3 +505,34 @@ input[type='button']:hover {
   background-color: var(--third-primary-color);
   outline: none;
 }
+
+.our-customers h2 {
+  font-size: 36px;
+  weight: 700px;
+  line-height: 42.19px;
+  text-align: center;
+  font-family: 'Roboto';
+}
+.our-customers-bg {
+  width: 170px;
+  height: 92px;
+  border: 1px solid var(--social-links-color);
+  border-radius: 4px;
+  margin-top: 50px;
+}
+.our-customers-bg:hover {
+  border: 1px solid var(--primary-color);
+}
+.our-customers-list {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+.icon-customers {
+  display: flex;
+  margin: 16px 32px 16px 32px;
+  color: var(--social-links-color);
+}
+.icon-customers:hover {
+  fill: var(--primary-color);
+}
