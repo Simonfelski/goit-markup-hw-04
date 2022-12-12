@@ -502,13 +502,12 @@ input[type='button']:hover {
 
 .sm-circle:hover,
 .sm-circle:focus {
-  background-color: var(--third-primary-color);
+  background-color: var(--primary-color);
   outline: none;
 }
 
 .our-customers h2 {
   font-size: 36px;
-  weight: 700px;
   line-height: 42.19px;
   text-align: center;
   font-family: 'Roboto';
