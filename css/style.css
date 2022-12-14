@@ -141,7 +141,6 @@ body {
   font-size: 2.25rem;
   line-height: 42px;
   letter-spacing: 0.03em;
-  color: var(--second-primary-color);
 }
 .hero-bg {
   background: linear-gradient(
@@ -219,7 +218,6 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  /* padding-top: 94px; */
   padding-bottom: 50px;
 }
 
@@ -243,6 +241,7 @@ body {
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
+  background-color: var(--basic-white-color);
 }
 
 .li-no-list {
@@ -377,7 +376,22 @@ body {
   color: var(--second-primary-color);
 }
 
-.ul-info-port input[type='button'] {
+/* .ul-info-port input[type='button'] {
+  margin: 5px;
+  width: 121px;
+  height: 38px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+} */
+
+.button {
   margin: 5px;
   width: 121px;
   height: 38px;
@@ -391,8 +405,20 @@ body {
   outline: none;
   border-radius: 4px;
 }
-.ul-info-port [type='button'] .active,
+
+/* .ul-info-port [type='button'] .active,
 input[type='button']:hover {
+  color: white;
+  background-color: var(--primary-color);
+  box-shadow: 0px 3px 1px #0000001a, 0px 1px 2px #00000014, 0px 2px 2px #0000001f;
+} */
+
+.active:hover {
+  color: white;
+  background-color: var(--primary-color);
+  box-shadow: 0px 3px 1px #0000001a, 0px 1px 2px #00000014, 0px 2px 2px #0000001f;
+}
+.button:hover {
   color: white;
   background-color: var(--primary-color);
   box-shadow: 0px 3px 1px #0000001a, 0px 1px 2px #00000014, 0px 2px 2px #0000001f;
@@ -487,7 +513,7 @@ input[type='button']:hover {
   padding: 0px 32px 30px 32px;
 }
 
-.social-icons a {
+.sm-circle {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -536,7 +562,7 @@ input[type='button']:hover {
   border-radius: 4px;
   outline: 1px solid var(--social-links-color);
   padding: 16px 32px;
-  display: inline-block;
+  display: block;
   color: var(--social-links-color);
 }
 
